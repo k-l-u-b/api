@@ -24,14 +24,14 @@ class ClubberController extends Controller
 
       public function putClubber($id,Request $request)
       {
-        /*$article = Article::findOrFail($id);
-        $article->update($request->all());
-    
-        return $article;*/
-
-        //var_dump($request->name);
         $clubber = Clubber::findOrFail($id);
         $clubber->update($request->all()); 
         return $clubber;
+      }
+      public function delClubber($id)
+      {
+        $clubber = Clubber::findOrFail($id);
+        $clubber->delete(); 
+        return "Clubber has been deleted";
       }
 }
