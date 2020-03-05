@@ -21,6 +21,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Clubber api routes
 Route::get('clubbers', 'ClubberController@getClubbers');
 Route::get('clubber/{id}', 'ClubberController@getClubber');
+//Route::post('clubber/{id}', 'ClubberController@putClubber');
 Route::put('clubber/{id}', 'ClubberController@putClubber');
 Route::delete('clubber/{id}', 'ClubberController@delClubber');
+Route::post('clubber/{id}/perception', 'ClubberController@postPerception');
+Route::get('clubber/{id}/perceptions', 'ClubberController@getPerceptions');
+Route::put('clubber/{user_id}/perception/{perception_id}', 'ClubberController@putPerception');
 
+// Perception
