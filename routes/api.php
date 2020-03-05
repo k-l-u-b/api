@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Clubber api routes
 Route::get('clubbers', 'ClubberController@getClubbers');
 Route::get('clubber/{id}', 'ClubberController@getClubber');
+Route::put('clubber/{id}', 'ClubberController@putClubber');
