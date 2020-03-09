@@ -18,8 +18,10 @@ class PerceptionsTableSeeder extends Seeder
             $target_clubber_id = rand(1, 100);
             $bizarre_alluring =  rand(-100, 100);
             $introvert_exuberant = rand(-100, 100);
+            $anxious_satisfied = rand(-100, 100);
 	        DB::table('perceptions')->insert([
                 'clubber_id'=> $clubber_id,
+                'anxious_satisfied' => $anxious_satisfied,
                 'target_clubber_id' => $target_clubber_id,
                 'bizarre_alluring' => $bizarre_alluring,
                 'introvert_exuberant' => $introvert_exuberant

@@ -44,6 +44,7 @@ class ClubberController extends Controller
         if($clubber) {
             $perception = Perception::create([
                 'clubber_id' => $id,
+                'anxious_satisfied' => $anxious_satisfied,
                 'bizarre_alluring' => $request->bizarre_alluring,
                 'introvert_exuberant' => $request->introvert_exuberant,
                 'target_clubber_id' => $request->target_clubber_id

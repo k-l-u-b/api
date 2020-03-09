@@ -18,7 +18,7 @@ class CreateClubbersTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->integer('money');
-            $table->integer('satisfaction');
+            $table->integer('anxious_satisfied');
             $table->integer('bizarre_alluring');
             $table->integer('introvert_exuberant');
         });

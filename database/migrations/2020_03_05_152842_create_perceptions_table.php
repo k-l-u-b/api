@@ -17,6 +17,7 @@ class CreatePerceptionsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('clubber_id');
+            $table->integer('anxious_satisfied');
             $table->integer('bizarre_alluring');
             $table->integer('introvert_exuberant');
             $table->integer('target_clubber_id');
